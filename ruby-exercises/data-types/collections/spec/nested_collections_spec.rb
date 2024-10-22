@@ -60,73 +60,75 @@ RSpec.describe 'Nested Collections' do
     expect(pitchers).to eq(expected)
   end
 
-  xit 'test 7' do
+  it 'test 7' do
     team = {
-      pitchers: ['Kenny', 'Joan', 'Shabaz'],
-      fielders: ['Luke', 'Chris', 'Megan', 'Mark', 'Mackenzie'],
-      catchers: ['Johnny']
+      pitchers: %w[Kenny Joan Shabaz],
+      fielders: %w[Luke Chris Megan Mark Mackenzie],
+      catchers: %w[Johnny]
     }
     # Using the team variable defined above
     # add 'Phil' as a pitcher
-    __________
+    team[:pitchers].push('Phil')
 
     expected = {
-      pitchers: ['Kenny', 'Joan', 'Shabaz', 'Phil'],
-      fielders: ['Luke', 'Chris', 'Megan', 'Mark', 'Mackenzie'],
-      catchers: ['Johnny']
+      pitchers: %w[Kenny Joan Shabaz Phil],
+      fielders: %w[Luke Chris Megan Mark Mackenzie],
+      catchers: %w[Johnny]
     }
     expect(team).to eq(expected)
   end
 
-  xit 'test 8' do
+  it 'test 8' do
     team = {
-      pitchers: ['Kenny', 'Joan', 'Shabaz'],
-      fielders: ['Luke', 'Chris', 'Megan', 'Mark', 'Mackenzie'],
-      catchers: ['Johnny']
+      pitchers: %w[Kenny Joan Shabaz],
+      fielders: %w[Luke Chris Megan Mark Mackenzie],
+      catchers: %w[Johnny]
     }
     # Using the team variable defined above
     # create a new key :coaches with the value
     # of an empty array
-    _________
+    team[:coaches] = []
 
     expected = {
-      pitchers: ['Kenny', 'Joan', 'Shabaz'],
-      fielders: ['Luke', 'Chris', 'Megan', 'Mark', 'Mackenzie'],
-      catchers: ['Johnny'],
+      pitchers: %w[Kenny Joan Shabaz],
+      fielders: %w[Luke Chris Megan Mark Mackenzie],
+      catchers: %w[Johnny],
       coaches: []
     }
     expect(team).to eq(expected)
   end
 
-  xit 'test 9' do
+  it 'test 9' do
     team = {
-      pitchers: ['Kenny', 'Joan', 'Shabaz'],
-      fielders: ['Luke', 'Chris', 'Megan', 'Mark', 'Mackenzie'],
-      catchers: ['Johnny']
+      pitchers: %w[Kenny Joan Shabaz],
+      fielders: %w[Luke Chris Megan Mark Mackenzie],
+      catchers: %w[Johnny]
     }
     # Using the team variable defined above
     # Find out how many fielders there are
-    num_fielders = ________
+    num_fielders = team[:fielders].length
     expect(num_fielders).to eq(5)
   end
 
-  xit 'test 10' do
+  it 'test 10' do
     team = {
-      pitchers: ['Kenny', 'Joan', 'Shabaz'],
-      fielders: ['Luke', 'Chris', 'Megan', 'Mark', 'Mackenzie'],
-      catchers: ['Johnny']
+      pitchers: %w[Kenny Joan Shabaz],
+      fielders: %w[Luke Chris Megan Mark Mackenzie],
+      catchers: %w[Johnny]
     }
     # Using the team variable defined above
     # Find out if 'Kenny' is a pitcher
-    kenny_is_pitcher = ________
+    kenny_is_pitcher = team[:pitchers].include?('Kenny')
     expect(kenny_is_pitcher).to eq(true)
   end
 
-  xit 'test 11' do
+  it 'test 11' do
     # HINT: You may find it valuable to break the three_day_forecast variable
     # into multiple lines to make it more readable
 
-    three_day_forecast = {days: [{high: 70,low: 63,summary: 'Mostly Sunny'},{high: 55,low: 47,summary: 'Partly Cloudy'},{high: 77,low: 64,summary: 'Sunny'}], 'date' => '6-21-18',ref_num: 3456789765456787656}
+    three_day_forecast = {days: [{high: 70,low: 63,summary: 'Mostly
+    Sunny'},{high: 55,low: 47,summary: 'Partly Cloudy'},{high: 77,low:
+    64,summary: 'Sunny'}], 'date' => '6-21-18',ref_num: 3456789765456787656}
     # Using the three_day_forecast variable defined above,
     # retrieve the expected piece of information
 
