@@ -31,7 +31,7 @@ class AboutStrings < Neo::Koan
     a = %(flexible quotes can handle both ' and " characters)
     b = %!flexible quotes can handle both ' and " characters!
     c = %{flexible quotes can handle both ' and " characters}
-    assert_equal %(flexible quotes can handle both ' and " characters) == %!flexible quotes can handle both ' and " characters!, a == b
+    assert_equal %(flexible quotes can handle both ' and " characters) == %!flexible quotes can handle both ' and " characters!,  a == b
     assert_equal %(flexible quotes can handle both ' and " characters) == %{flexible quotes can handle both ' and " characters}, a == c
   end
 
