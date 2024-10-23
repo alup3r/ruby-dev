@@ -100,23 +100,22 @@ RSpec.describe 'Advanced Nested Collections' do
 
   it 'test 9' do
     # Return the full menu price for Olive Garden
-    full_menu_price = ____
+    full_menu_price = stores[:olive_garden][:dishes].map { |hash| hash[:price] }.sum
 
     expect(full_menu_price).to eq(27)
   end
 
-  xit 'test 10' do
+  it 'test 10' do
     # Return the full menu for Olive Garden
 
-    olive_garden_menu = _____
-    
+    olive_garden_menu = stores[:olive_garden][:dishes].map { |dish| [dish[:name], dish] }.to_h
     expected = {
       'Risotto' => {
         name: 'Risotto',
         ingredients: %w[Rice Cheese Butter],
         price: 12
       },
-      'Steak': {
+      'Steak' => {
         name: 'Steak',
         ingredients: %w[Beef Garlic],
         price: 15
@@ -125,9 +124,11 @@ RSpec.describe 'Advanced Nested Collections' do
     expect(olive_garden_menu).to eq(expected)
   end
 
-  xit 'test 11' do
+  it 'test 11' do
     # Return a full menu across all restaurants
-    full_menu = ____
+    full_menu = stores.map do |_, data|
+      data[:dishes].map { |dish| [dish[:name], dish] }.to_h
+    end.reduce({}) { |menu, dishes| menu.merge(dishes) }
 
     expected = {
       'Risotto' => {
@@ -135,27 +136,27 @@ RSpec.describe 'Advanced Nested Collections' do
         ingredients: %w[Rice Cheese Butter],
         price: 12
       },
-      'Steak': {
+      'Steak' => {
         name: 'Steak',
         ingredients: %w[Beef Garlic],
         price: 15
       },
-      'Pancakes': {
+      'Pancakes' => {
         name: 'Pancakes',
         ingredients: %w[Flour Eggs Milk Syrup],
         price: 10
       },
-      'Waffles': {
+      'Waffles' => {
         name: 'Waffles',
         ingredients: %w[Flour Eggs Syrup],
         price: 7
       },
-      'Big Mac': {
+      'Big Mac' => {
         name: 'Big Mac',
         ingredients: %w[Bun Hamburger Ketchup pickles],
         price: 5
       },
-      'Fries': {
+      'Fries' => {
         name: 'Fries',
         ingredients: %w[Potatoes Salt],
         price: 2

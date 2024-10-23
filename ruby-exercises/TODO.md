@@ -1,10 +1,10 @@
 ### Ruby concepts to learn
 
-- [o] data-types
+- [X] data-types
     - [X] strings
     - [X] ints_and_floats
-    - [ ] collections
-        - [ ] advanced_nested_collections
+    - [X] collections
+        - [X] advanced_nested_collections
 - [ ] iteration
 - [ ] enumerables:
     - [ ] intro
