@@ -12,7 +12,7 @@ Suggested Order:
 - [X] find_pattern_spec.rb
 - [X] select_pattern_spec.rb
 - [X] count_pattern_spec.rb
-- [ ] all_pattern_spec.rb
-- [ ] max_and_min_by_pattern_spec.rb
-- [ ] inject_pattern_spec.rb
-- [ ] group_by_pattern_spec.rb
+- [X] all_pattern_spec.rb
+- [X] max_and_min_by_pattern_spec.rb
+- [X] inject_pattern_spec.rb
+- [X] group_by_pattern_spec.rb
