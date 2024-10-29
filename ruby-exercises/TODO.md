@@ -5,7 +5,7 @@
     - [X] ints_and_floats
     - [X] collections
         - [X] advanced_nested_collections
-- [ ] iteration
+- [X] iteration
 - [ ] enumerables:
     - [ ] intro
     - [ ] objects
