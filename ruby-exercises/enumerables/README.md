@@ -69,8 +69,8 @@ Consider working through the exercises in this order:
 - [X] map
 - [X] select
 - [X] find (aka detect)
-- [ ] sort_by
-- [ ] count
+- [X] sort_by
+- [X] count
 - [ ] reject
 - [ ] reduce (this one is tricky!)
 - [ ] any?
