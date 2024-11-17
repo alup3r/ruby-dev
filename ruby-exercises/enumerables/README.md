@@ -71,10 +71,10 @@ Consider working through the exercises in this order:
 - [X] find (aka detect)
 - [X] sort_by
 - [X] count
-- [ ] reject
-- [ ] reduce (this one is tricky!)
-- [ ] any?
-- [ ] all?
+- [X] reject
+- [X] reduce (this one is tricky!)
+- [X] any?
+- [X] all?
 - [ ] none?
 - [ ] one?
 - [ ] group_by (this one is tricky too!)
