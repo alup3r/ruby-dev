@@ -75,8 +75,8 @@ Consider working through the exercises in this order:
 - [X] reduce (this one is tricky!)
 - [X] any?
 - [X] all?
-- [ ] none?
-- [ ] one?
+- [X] none?
+- [X] one?
 - [ ] group_by (this one is tricky too!)
 - [ ] zip
 
