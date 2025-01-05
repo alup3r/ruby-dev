@@ -6,10 +6,10 @@
     - [X] collections
         - [X] advanced_nested_collections
 - [X] iteration
-- [ ] enumerables:
-    - [ ] intro
-    - [ ] objects
-- [ ] initialize
+- [X] enumerables:
+    - [X] intro
+    - [X] objects
+- [X] initialize
 - [ ] command-query
 - [ ] objects-and-methods:
     - [ ] exercise-1
