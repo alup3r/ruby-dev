@@ -25,36 +25,36 @@ These exercises focus on these two types of operations.
 
 ## Exercises
 
-- `leather_chair_spec.rb`
-- `tire_spec.rb`
-- `pills_spec.rb`
-- `floor_spec.rb`
-- `milk_bottle_spec.rb`
-- `person_spec.rb`
-- `door_spec.rb`
-- `teeth_spec.rb`
-- `music_spec.rb`
-- `drops_spec.rb`
-- `light_spec.rb`
-- `baby_spec.rb`
-- `kid_spec.rb`
-- `beers_spec.rb`
-- `teenager_spec.rb`
-- `adult_spec.rb`
-- `roll_call_spec.rb`
-- `santa_spec.rb`
-- `dog_spec.rb`
-- `children_spec.rb`
-- `water_spec.rb`
-- `clock_spec.rb`
-- `appointments_spec.rb`
-- `yak_spec.rb`
-- `money_spec.rb`
-- `cupcake_spec.rb`
-- `student_spec.rb`
-- `catalogue_spec.rb`
-- `wallet_spec.rb`
-- `clearance_spec.rb`
+- [X] `leather_chair_spec.rb`]
+- [X] `tire_spec.rb`]
+- [X] `pills_spec.rb`]
+- [X] `floor_spec.rb`]
+- [X] `milk_bottle_spec.rb`]
+- [X] `person_spec.rb`]
+- [X] `door_spec.rb`]
+- [X] `teeth_spec.rb`]
+- [X] `music_spec.rb`]
+- [X] `drops_spec.rb`]
+- [X] `light_spec.rb`]
+- [X] `baby_spec.rb`]
+- [X] `kid_spec.rb`]
+- [X] `beers_spec.rb`]
+- [ ] `teenager_spec.rb`]
+- [ ] `adult_spec.rb`]
+- [ ] `roll_call_spec.rb`]
+- [ ] `santa_spec.rb`]
+- [ ] `dog_spec.rb`]
+- [ ] `children_spec.rb`]
+- [ ] `water_spec.rb`]
+- [ ] `clock_spec.rb`]
+- [ ] `appointments_spec.rb`]
+- [ ] `yak_spec.rb`]
+- [ ] `money_spec.rb`]
+- [ ] `cupcake_spec.rb`]
+- [ ] `student_spec.rb`]
+- [ ] `catalogue_spec.rb`]
+- [ ] `wallet_spec.rb`]
+- [ ] `clearance_spec.rb`]
 
 ## Go make up more
 
